@@ -1,0 +1,70 @@
+.contenedor
+{
+    background-color: aqua;
+    padding: 5px;
+    font-size: 25px;
+    display: grid;
+    grid-gap: 10px;
+    text-align: center;
+    grid-template-rows: 2fr 1fr 7fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "cabecera cabecera cabecera"
+                         "menu     menu     menu"
+                         "contenido contenido publi"
+                         "pie       pie       pie";
+}
+.contenedor>div
+{
+    background-color: chartreuse;
+}
+.contenedor .cabecera
+{
+    background-color: yellow;
+    grid-column: cabecera;
+}
+.contenedor .menu
+{
+    background-color: coral;
+    grid-column: menu;
+}
+.contenedor .contenido
+{
+    background-color: beige;
+    grid-column: contenido;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.contenedor .publi
+{
+    background-color: antiquewhite;
+    grid-column: publi;
+}
+.contenedor .pie
+{
+    background-color: darkkhaki;
+    grid-column: pie;
+}
+.te1 
+{
+    background-color: brown;
+    grid-column: 2/3;
+    grid-row: 4/3;
+}
+.t2 
+{
+    background-color: brown;
+    grid-column: 4/5;
+    grid-row: 4/3;
+}
+.t3
+{
+    background-color: brown;
+
+}
+.t4
+{
+    background-color: brown;
+}
